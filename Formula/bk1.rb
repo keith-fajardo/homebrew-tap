@@ -6,28 +6,28 @@
 # repo (github.com/keith-fajardo/homebrew-tap) as Formula/bk1.rb — which is
 # what `brew install keith-fajardo/tap/bk1` reads.
 #
-# Placeholders: 0.4.11  2aa7a6277dc03340bdbf25cf145839adfbd5a9b485022702f1f76345d829b313  b26253d70489b961c2c9a08d9347202169cd60b5799e985e3a0493e8ceb00eca  76f63b9aeff3cd5ca192c10e1b86480cc4d6665368b782e06099abdd30fffdfa
+# Placeholders: 0.4.12  fdea99f507ebdf0eb939d1d902cab805bda30bc9f44a26bc886aa50526542e9f  e38213b70f9ee05bb56ae2fc5af4f7883b7b3c60bcc41220395e812de01a3465  9a2c6b25c0c4c3ec4d5a9cd7f9d50b878205d491130ac6833496e460f10a0793
 class Bk1 < Formula
   desc "Deterministic dbt linter with a coding agent attached, for the terminal"
   homepage "https://github.com/keith-fajardo/bk1"
-  version "0.4.11"
+  version "0.4.12"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/keith-fajardo/bk1/releases/download/v0.4.11/bk1-0.4.11-darwin-arm64.tar.gz"
-      sha256 "2aa7a6277dc03340bdbf25cf145839adfbd5a9b485022702f1f76345d829b313"
+      url "https://github.com/keith-fajardo/bk1/releases/download/v0.4.12/bk1-0.4.12-darwin-arm64.tar.gz"
+      sha256 "fdea99f507ebdf0eb939d1d902cab805bda30bc9f44a26bc886aa50526542e9f"
     end
     on_intel do
-      url "https://github.com/keith-fajardo/bk1/releases/download/v0.4.11/bk1-0.4.11-darwin-x64.tar.gz"
-      sha256 "b26253d70489b961c2c9a08d9347202169cd60b5799e985e3a0493e8ceb00eca"
+      url "https://github.com/keith-fajardo/bk1/releases/download/v0.4.12/bk1-0.4.12-darwin-x64.tar.gz"
+      sha256 "e38213b70f9ee05bb56ae2fc5af4f7883b7b3c60bcc41220395e812de01a3465"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/keith-fajardo/bk1/releases/download/v0.4.11/bk1-0.4.11-linux-x64.tar.gz"
-      sha256 "76f63b9aeff3cd5ca192c10e1b86480cc4d6665368b782e06099abdd30fffdfa"
+      url "https://github.com/keith-fajardo/bk1/releases/download/v0.4.12/bk1-0.4.12-linux-x64.tar.gz"
+      sha256 "9a2c6b25c0c4c3ec4d5a9cd7f9d50b878205d491130ac6833496e460f10a0793"
     end
     on_arm do
       odie "bk1 does not ship a prebuilt Linux arm64 binary yet. Build from source: #{homepage}"
